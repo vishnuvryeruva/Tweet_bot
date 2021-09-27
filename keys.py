@@ -1,4 +1,4 @@
-CONSUMER_KEY='4a3QwZNrYYXPTXLgyuXtkoD1b'
-CONSUMER_SECRET='HtUQRIlYflUFAbBvVixOLH3z4hNzIHiCRYbt1csN2B1A5ooV2o'
-ACCESS_KEY='2399333257-YHKKReoLjql6sgLN4kYtUioIqDN4fIEvBF5KNPr'
-ACCESS_SECRET='5m5ZElnQcTVTlmnBPMj7i7N02RntUAs6xuBkXrz1oCXar'
+CONSUMER_KEY='*********************'
+CONSUMER_SECRET='*****************************************************'
+ACCESS_KEY='*********-******************************************'
+ACCESS_SECRET='***********************'

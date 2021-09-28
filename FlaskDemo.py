@@ -1,3 +1,6 @@
+# By Sarjak and Khushil
+
+
 from flask import Flask, render_template, url_for, redirect
 from Forms import CreateTweet, SearchForm, DeleteForm
 

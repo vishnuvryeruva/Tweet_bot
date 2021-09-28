@@ -1,6 +1,8 @@
 from flask import Flask, render_template, url_for, redirect
 from Forms import CreateTweet, SearchForm, DeleteForm
 
+import win32ui
+import win32con
 import tweepy
 import time
 from keys import *
@@ -46,6 +48,8 @@ def create():
 		tweet=form.tweet.data
 		newt = api.update_status(tweet)
 		return redirect(url_for('hello'))
+    else:
+		print
 
 	return render_template('create.html',title='create', form=form)
 
@@ -73,7 +77,7 @@ def delete():
 	if form.validate_on_submit():
 		deleteTweetId=form.deleteTweetId.data
 		try:
-			delt = api.destroy_status(deleteTweetId)
+			delt = api.destroy_status(deleteTweetId) win32ui.MessageBox("Message", "Title")
 			return redirect(url_for('hello'))
 		except:
 			return redirect(url_for('delete'))
@@ -84,6 +88,6 @@ def delete():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=False)
 
 
